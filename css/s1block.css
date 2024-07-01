@@ -1,0 +1,109 @@
+.s1block{
+  width: 100%;
+  height: 100%;
+  background: #FEC89A;
+
+  display: grid;
+  grid-template-columns: 1fr 1200px 1fr;
+
+  grid-template-areas: 
+  ". s1_container .";
+  color: snow;
+}
+
+.s1_container{
+  grid-area: s1_container;
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: 1fr repeat(3,350px) 1fr;
+  grid-template-areas: 
+  ". inception_title inception_title inception_img ."
+  ". designe_img designe_title designe_title .";
+  gap: 20px;
+}
+.inception_title{
+  grid-area: inception_title;
+  background: #CCCCCC;
+  font-size: 140px;
+  width: 100%;
+}
+.inception_img{
+  grid-area: inception_img;
+}
+.designe_title{
+  grid-area: designe_title;
+  background: #FEBB81;
+  font-size: 48px;
+}
+.designe_img{
+  grid-area: designe_img;
+}
+.inception_title,
+.inception_img,.inception_img img,
+.designe_title,.designe_img,.designe_img img{
+  border-radius: 40px;
+  color: #000;
+  height: 321px;
+}
+.inception_title,.designe_title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media(max-width: 1300px){
+  .s1block {
+    width: 100%;
+    height: 100%;
+    background: #FEC89A;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+  }
+  .s1_container{
+    grid-template-columns: 50px repeat(2,1fr) 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". inception_title inception_title ."
+    ". inception_img designe_img ."
+    ". designe_title designe_title .";
+  }
+  .designe_img,.inception_img,.designe_img img,.inception_img img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media(max-width: 1200px){
+  .inception_title{
+    font-size: 48px;
+  }
+}
+@media(max-width: 810px){
+  .s1block {
+    width: 100%;
+    height: 100%;
+    background: #FEC89A;
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+    gap: 0;
+  }
+  .s1_container{
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-rows: 320px 320px 320px 320px;
+    grid-template-areas: 
+    ". inception_title ."
+    ". inception_img ."
+    ". designe_img ."
+    ". designe_title .";
+    grid-column-gap: 0px;
+    padding: 20px 0;
+  }
+  .designe_img,.inception_img,.designe_img img,.inception_img img{
+    width: 100%;
+    height: 100%;
+  }
+  .designe_title{
+    font-size: 32px;
+  }
+}
