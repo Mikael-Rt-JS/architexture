@@ -1,0 +1,30 @@
+.s2block,.s2_1block{
+  width: 100%;
+  height: 100vh;
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items:center;
+  align-items: center;
+
+  font-size: 48px;
+  color: snow;
+}
+.s2block{
+  background: url('https://kartinki.pics/pics/uploads/posts/2022-08/1661180572_4-kartinkin-net-p-neboskrebi-oboi-krasivo-4.jpg') center / cover no-repeat;
+}
+.s2_1block{
+  background: url('https://kartinki.pics/pics/uploads/posts/2022-08/1661180572_4-kartinkin-net-p-neboskrebi-oboi-krasivo-4.jpg') center / cover no-repeat;
+}
+@media(max-width: 810px){
+  .s2block,.s2_1block{
+    font-size: 32px;
+    text-align: center;
+  }
+}
+@media (max-width: 410px) {
+    .s2block, .s2_1block {
+        font-size: 32px;
+    }
+}
