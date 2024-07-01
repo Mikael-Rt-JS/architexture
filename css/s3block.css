@@ -1,0 +1,41 @@
+.s3block{
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: 1fr 1200px 1fr;
+  grid-template-areas: ". s3_container .";
+  background: #FEC89A;
+}
+.s3_container{
+  grid-area: s3_container;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2,1fr);
+}
+.s3_container h3{
+  font-size: 48px;
+}
+.s3_container p{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media(max-width: 1300px){
+
+}
+@media(max-width: 1200px){
+  .s3block{
+    grid-template-columns: 10px 1fr 10px;
+    grid-template-areas: ". s3_container .";
+  }
+  .s3_container{
+    grid-template-columns: 1fr;
+  }
+  .s3_container h3{
+    font-size: 32px;
+  }
+}
+@media(max-width: 810px){
+
+}
